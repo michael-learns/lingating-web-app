@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+### Running Locally
+
 First, run the development server:
 
 ```bash
@@ -17,6 +19,30 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+### Running with Docker
+
+This project includes Docker configurations for both development and production environments.
+
+#### Development
+
+To run the development server with Docker:
+
+```bash
+docker-compose up nextjs-dev
+```
+
+This will start the development server with hot-reloading enabled. You can access the application at [http://localhost:3000](http://localhost:3000).
+
+#### Production
+
+To run the production build with Docker:
+
+```bash
+docker-compose up nextjs-prod
+```
+
+This will build and start the production-ready application. Access it at [http://localhost:3000](http://localhost:3000).
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
